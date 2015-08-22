@@ -1,0 +1,176 @@
+/*CSS Reset*/
+body, div, ul, ol, li, h1,
+h2, form,
+fieldset, input, p{
+    padding: 0;
+    margin: 0;
+}
+fieldset, img{
+    border: 0;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(250,250,250);
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif;
+    font-size: inherit;
+    background-color: rgb(250,250,250);
+}
+
+/*header css*/
+#header{
+    width: 100%;
+    height: 240px;
+    background-color: rgb(175,189,202);
+}
+#headerInfo{
+    padding: 2.6% 0 0 15%;
+    color: #ffffff;
+    width: 36%;
+}
+#headerInfo h1{
+    font-size: 60px;
+}
+#header p{
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: 7px;
+}
+#headerLogo{
+    float: right;
+    margin: 30px 250px 0 0;
+    width: 160px;
+    height: auto;
+}
+/* Header--css>>>  When it less than 1024*/
+@media screen and (max-width: 1024px){
+    #headerInfo{
+        display: none;
+    }
+    #headerLogo{
+        margin: 0;
+        width: 160px;
+        float: inherit;
+    }
+    #header{
+        text-align: center;
+    }
+}
+
+/*main container*/
+.container{
+    width: 60%;
+    margin-left:20%;
+}
+.sectionList{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.sectionListChange{
+    margin-top: 20px !important;
+}
+.sectionList a{
+    width: auto;
+}
+.sectionList img{
+    width: 75%;
+    float: left;
+}
+.Down img{
+    width: 6%;
+}
+.Down_1{
+    text-align: center;
+    position: relative;
+    bottom: -64px;;
+}
+.Down_2{
+    text-align: center;
+    position: relative;
+    bottom: -39px;
+}
+@media screen and (max-width: 1240px){
+    .Down{
+        display: none;
+    }
+}
+/*footPage*/
+#GSC{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+#GSC h1{
+    font-size: 50px;
+    color: rgb(107,107,107);
+}
+#GSC span{
+    margin-left: 13px;
+    font-size: 50px;
+}
+#social{
+    position: relative;
+    top: 200px;
+    margin-left: 20%;
+    width: 60%;
+}
+#social ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#social li img {
+    width: 80px;
+    margin: 15px 15px 0 0;
+}
+
+#footer{
+    clear: both;
+    background-color: rgb(175,188,205);
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+#footer a{
+    font-size: 23px;
+}
+#footer img{
+    width: 50px;
+    margin-top: 14px;
+}
+#footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+}
+#footer li{
+    display: inline-block;
+}
+/*Footer--css when less than 1240*/
+@media screen and (max-width: 1240px) {
+    #GSC{
+        top: 40px;
+    }
+    #social{
+        top: 80px;
+        width: 80%;
+        margin-left: 10%;
+    }
+}

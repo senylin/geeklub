@@ -1,0 +1,65 @@
+/*CSS Reset*/
+body, div, ul, ol, li, h1,
+h2, form,
+fieldset, input, p{
+    padding: 0;
+    margin: 0;
+}
+fieldset, img{
+    border: 0;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(250,250,250);
+}
+body{
+    font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif;
+    font-size: inherit;
+    background-color: rgb(175,189,202);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#containBox{
+    width: 40%;
+}
+#JULogo{
+    width: 30%;
+    margin: 20px 0;
+}
+#containBox h1{
+    font-size: 60px;
+    color: #ffffff;
+}
+#Form{
+    width: 80%;
+    margin:0 10%;
+}
+#Form input{
+    width: 90%;
+    height: 50px;
+    border: 0;
+    color: rgb(136,125,129);
+    font-size: 30px;
+    text-align: center;
+    background: transparent;
+    border-bottom: 2px solid rgb(142,156,165);
+    outline:none;
+}
+#SB{
+    border-radius: 25px;
+    color: rgb(255,255,255)!important;
+    width: 50% !important;
+    margin-top: 30px !important;
+    border: 2px solid rgb(255,255,255) !important;
+    cursor:crosshair;
+    transition: 0.5s;
+}
+#Form input:hover,#SB:hover{
+    box-shadow: 0 0 20px rgb(142,156,165);
+    transition: 0.5s;
+}

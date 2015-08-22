@@ -1,0 +1,137 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="form-input.html">
+<dom-module id="form-geeklub">
+    <style>
+        #list{
+            position: relative;
+            top:120px;
+            margin: 0 auto;
+            width: 240px;
+            height: 450px;
+            display: box;
+            display: -moz-box;
+            display: -webkit-box;
+            -moz-box-orient:vertical;
+            -webkit-box-orient:vertical;
+            box-orient:vertical;
+            -moz-box-align:center;
+            -webkit-box-align:center;
+            -o-box-align:center;
+            box-align:center;
+            background: url(../img/Join%20us/Background.jpg);
+        }
+        #name{
+            background-image: url(../img/Join%20us/Name.png);
+        }
+        #email{
+            background-image: url(../img/Join%20us/Email%20Adress.png);
+        }
+        #phone{
+            background-image: url(../img/Join%20us/Phone%20Number.png);
+        }
+        #student{
+            background-image: url(../img/Join%20us/Student%20Number.png);
+        }
+        .in_put{
+            width: 100%;
+            height: 35px;
+            font-size: 20px;
+            font-weight:600 ;
+            border-radius: 20px;
+            border: 0px;
+            text-align: center;
+            z-index:2 ;
+            display: none;
+        }
+        .block{
+            position: relative;
+            margin-top: 30px;
+            width: 100%;
+            height: 35px;
+            background-size: 100% 100%;
+            z-index:1;
+        }
+        .button{
+            border:0px;
+            border-radius:25px ;
+            width: 90%;
+            height: 55px;
+            margin-left: 5%;;
+            background:url(../img/Join%20us/Submit.png);
+            background-size: 100% 100%;
+        }
+        #submit{
+            width: 100%;
+            height: 55px;
+            border-radius:25px ;
+            margin-top: 50px;
+        }
+        .click:hover{
+            cursor: pointer;
+        }
+    </style>
+
+    <template>
+        <form id="list">
+            <div id="name" class="block click" on-click="getInput">
+                <input type="text" value={{name}} class="in_put" on-change="handleName"  placeholder="Your Name"/>
+            </div>
+            <div id="email" class="block click" on-click="getInput">
+                <input type="text" value={{email}} class="in_put" on-change="handleEmail"  placeholder="Your Email"/>
+            </div>
+            <div id="phone" class="block click" on-click="getInput">
+                <input type="text" value={{phone}} class="in_put" on-change="handlePhone"  placeholder="Your PhoneNumber"/>
+            </div>
+            <div id="student" class="block click" on-click="getInput">
+                <input type="text" value={{number}} class="in_put" on-change="handleNumber"  placeholder="Your Number"/>
+            </div>
+            <div id="submit" >
+                <input type="submit" class="button click" value="" on-click="" />
+            </div>
+        </form>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is:'form-geeklub',
+        properties:{
+         name:{
+             type:String,
+             value:""
+         },
+            email:{
+                type:String,
+                value:""
+            },
+            phone:{
+                type:String,
+                value:""
+            },
+            number:{
+                type:String,
+                value:""
+            }
+        },
+        ready:function(){
+
+        },
+        getInput:function(e){
+            var input = e.target.children[0];
+            if(input)
+            input.style.display="block";
+
+        },
+        handleName:function(e){
+            name = e.target.value;
+        },
+        handleEmail:function(e){
+            email = e.target.value;
+        },
+        handlePhone:function(e){
+            phone = e.target.value;
+        },
+        handleNumber:function(e){
+            number = e.target.value;
+        }
+    })
+</script>

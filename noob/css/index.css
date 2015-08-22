@@ -1,0 +1,194 @@
+.container{
+    width: 100%;
+    height: 980px;
+    /*background: white;*/
+}
+.left_page{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 980px;
+    background: url(../img/Index/Background1.jpg);
+    background-size: 100% 100%;
+}
+.right_page{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 980px;
+    background: url(../img/Index/Background2.jpg);
+    background-size: 100% 100%;
+}
+.top_tri{
+    z-index: 5;
+    position: relative;
+    width: 48px;
+    height: 36px;
+    top:0px;
+    margin: 0 auto;
+    background: url(../img/Index/Polygon1.png);
+    background-size: 100% 100%;
+}
+.geek_logo{
+    z-index: 5;
+    position: relative;
+    width: 200px;
+    height: 230px;
+    top:280px;
+    margin: 0 auto;
+    background: url(../img/Index/Logo.png);
+    background-size: 100% 100%;
+}
+.bottom_tri{
+    z-index: 5;
+    position: relative;
+    width: 48px;
+    height: 36px;
+    top:678px;
+    margin: 0 auto;
+    background: url(../img/Index/Polygon2.png);
+    background-size: 100% 100%;
+}
+.txt1{
+    position: relative;
+    top:140px;
+    margin: 0 auto;
+    width: 70%;
+    height: 200px;
+    background: url(../img/Index/TXT1.png);
+    background-size: 100% 100%;
+}
+#about_us{
+    position: relative;
+    top:350px;
+    left: 15%;
+    width: 270px;
+    height: 50px;
+}
+
+.txt_all{
+    position: relative;
+    top:280px;
+    width: 60%;
+    height: 300px;
+    margin-left: 30%;
+}
+.txt2{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: url(../img/Index/GeeKlub.png);
+    background-size: 100% 100%;
+}
+.txt3{
+    position: relative;
+    width: 55%;
+    height: 70px;
+    top:90px;
+    background: url(../img/Index/TXT2.png);
+    background-size: 100% 100%;
+}
+.txt4{
+    position: relative;
+    width: 90%;
+    height: 30px;
+    top:130px;
+    background: url(../img/Index/TXT3.png);
+    background-size: 100% 100%;
+}
+.bear_all{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.bear_logo{
+     position: relative;
+     width: 70px;
+     height: 100%;
+     background: url(../img/Index/Bear1.png);
+     background-size: 100% 100%;
+ }
+.bear_logo_2{
+    position: relative;
+    float: left;
+    width: 70px;
+    height: 100%;
+    background: url(../img/Index/Bear2.png);
+    background-size: 100% 100%;
+}
+.bear_txt{
+    position: relative;
+    top:-30px;
+    float: left;
+    margin-left:100px; ;
+    width: 120px;
+    height: 40%;
+    background: url(../img/Index/About%20us.png);
+    background-size: 100% 100%;
+}
+#join_us{
+    position: relative;
+    top:450px;
+    left: 15%;
+    width: 270px;
+    height: 50px;
+}
+.men_all{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.men_logo{
+    position: relative;
+    width: 70px;
+    height: 100%;
+    background: url(../img/Index/Men1.png);
+    background-size: 100% 100%;
+}
+.men_logo_2{
+    position: relative;
+    float: left;
+    top:-45px;
+    width: 75px;
+    height: 75px;
+    background: url(../img/Index/Men2.png);
+    background-size: 100% 100%;
+}
+.men_txt{
+    position: relative;
+    top:-30px;
+    float: left;
+    margin-left:100px; ;
+    width: 100px;
+    height: 40%;
+    background: url(../img/Index/Join%20us.png);
+    background-size: 100% 100%;
+}
+.men_txt_2{
+    position: relative;
+    top:-75px;
+    left: 0px;
+    float: left;
+    margin-left:100px; ;
+    width: 100px;
+    height: 40%;
+    background: url(../img/Index/Join%20us.png);
+    background-size: 100% 100%;
+}
+.dian:hover{
+   cursor: pointer;
+}
+@media screen and (max-width: 650px){
+    .geek_logo{
+        width: 150px;
+        height: 180px;
+    }
+    .bottom_tri{top:728px;}
+    .txt1{width: 90%;height: 150px;}
+    #about_us{left:5%;}
+    #join_us{left:5%;}
+    .txt_all{height: 200px;top:10px;}
+    .txt2{height: 30px;top:30px;}
+    .txt3{height:40px;}
+    .txt4{top:450px;}
+}

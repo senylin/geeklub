@@ -1,0 +1,218 @@
+
+#container{
+    position: absolute;
+   height: 980px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 5;
+}
+.pages{
+    position: relative;
+    top:0px;
+    width: 100%;
+    height: 2940px;
+}
+/*page*/
+.pageone{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height:980px;
+    overflow: hidden;
+    top:0px;
+
+}
+.pagetwo{
+    position: relative;
+    z-index:1;
+    width: 100%;
+    height:980px;
+    overflow: hidden;
+}
+.pagethree{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height:980px;
+    overflow: hidden;
+}
+/*head*/
+.header{
+    height: 400px;
+    width: 100%;
+    background: url(../img/About_us_1/Top%20Background.png);
+    background-size: 100% 100%;
+    border:0px;
+}
+.header_Geek{
+    position: relative;
+    left: 10%;
+    top:100px;
+    width:300px ;
+    height:60px ;
+    background: url(../img/About_us_1/GeeKlub.png);
+    background-size: 100% 100%;
+}
+.header_TXT{
+    position: relative;
+    left: 10%;
+    top:140px;
+    width: 500px;
+    height: 90px;
+    background: url(../img/About_us_1/TXT1.png);
+    background-size: 100% 100%;
+}
+.header_Logo{
+    position: absolute;
+    right:15%;
+    top:100px;
+    width: 150px;
+    height: 180px;
+    background: url(../img/About_us_1/Geeklub%20Logo.png);
+    background-size: 100% 100%;
+
+}
+/*block*/
+.main{
+    height:auto;
+    width: 100%;
+}
+/*/ball/*/
+#main_oval{
+    position: absolute;
+    width:30px;
+    height: 120px;
+    top:450px;
+    left: 3%;
+    z-index: 3;
+}
+/*social*/
+#socialContact{
+   position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+}
+.social_logo{
+    position: relative;
+    top:120px;
+    margin:0 auto;
+    height: 50px;
+    width: 650px;
+    background: url(../img/About_us_3/TXT1.png);
+    background-size: 100% 100%;
+}
+/*Logo*/
+#all_logo{
+    position: relative;
+    width: 100%;
+    height: 530px;
+    background-color: white;
+}
+.logos{
+     position: relative;
+     margin: 0 auto;
+     height: 420px;
+     width:880px;
+     background-color: white;
+}
+.logoL{
+    float: left;
+    width: 50%;
+    height: 100%;
+
+}
+.logoR{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+
+/*foot*/
+#footer_3{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: url(../img/About_us_3/Bottom%20Background.jpg);
+}
+.footin{
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+.shouye{
+    float: left;
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 60px;
+    height: 30px;
+    background: url(../img/About_us_3/首页.png);
+    background-size: 100% 100%;
+}
+.jiaru{
+    float: left;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 120px;
+    height: 30px;
+    background: url(../img/About_us_3/加入我们%20.png);
+    background-size: 100% 100%;
+}
+.G_logo{
+    float: left;
+    margin-top: 10px;
+    margin-left: 60px;
+    width: 50px;
+    height: 60px;
+    background: url(../img/About_us_3/Logo.png);
+    background-size: 100% 100%;
+}
+.lianxi{
+    float: left;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 120px;
+    height: 30px;
+    background: url(../img/About_us_3/联系我们%20.png);
+    background-size: 100% 100%;
+}
+.guanyu{
+    float: left;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 120px;
+    height: 30px;
+    background: url(../img/About_us_3/关于我们.png);
+    background-size: 100% 100%;
+}
+.click:hover{
+    cursor: pointer;
+}
+/*change*/
+@media screen and (max-width: 1000px){
+    .header_Logo{position:absolute;left: 730px;}
+    .header_TXT{position: relative;left: 100px;}
+    .header_Geek{position: relative;left: 100px;}
+}
+@media screen and (max-width: 600px){
+    #container{height: 4260px;overflow: auto;}
+    .pageone{position: relative;height:auto;top:0px; }
+    .pagetwo{position: relative;top:0px;height: auto;}
+    .pagethree{position: relative;top:0px;height: auto;}
+    .header_Logo{display: none;}
+    .header_Geek{left: 10%;}
+    .header_TXT{width: 80%;left: 10%;}
+    #socialContact{height: 250px;}
+    #all_logo{height: 630px;}
+    .logos{width: 440px;}
+    .footer{display: none;}
+    #footer_3{top:30px;}
+    .footin{width: 100%;}
+    .shouye{display: none;}
+    .guanyu{display: none;}
+    .jiaru{display: none;}
+    .G_logo{margin-left: 45%;width: 10%;}
+    .lianxi{display: none;}
+    #main_oval{display: none;}
+}

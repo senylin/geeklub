@@ -1,0 +1,71 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="geek-experiment">
+    <style>
+        #bloc{
+            float: left;
+            width: 50%;
+            height: 480px;
+            background-color: white;
+            display: box;
+            display: -moz-box;
+            display: -webkit-box;
+            -moz-box-orient:horizontal;
+            -webkit-box-orient:horizontal;
+            box-orient:horizontal;
+            -moz-box-pack:center;
+            -webkit-box-pack:center;
+            -o-box-pack:center;
+            box-pack:center;
+        }
+        #experiment{
+            padding-top: 100px;
+            width: 240px;
+            height: 210px;
+        }
+       #experiment .log{
+            float: left;
+            margin-top: 10px;
+            width: 100%;
+            height: 100px;
+            background-size: 100% 100%;
+        }
+        #experiment .txt{
+            float: left;
+            margin-top: 35px;
+            width: 100%;
+            height: 45px;
+            background-size: 100% 100%;
+        }
+        @media screen and (max-width: 600px){
+            #bloc{
+
+                width:100%;
+
+            }
+        }
+    </style>
+
+    <template>
+        <div id="bloc">
+        <div id="experiment">
+        <div class="log"></div>
+        <div class="txt"></div>
+        </div></div>
+    </template>
+</dom-module>
+    <script>
+        Polymer({
+            is:'geek-experiment',
+            properties:{
+                name:{
+                    type:String,
+                    value:""
+                }
+            },
+            ready:function(){
+                this.experiment = this.$$("#experiment");
+                this.experiment.children[0].style.backgroundImage=" url(./img/About_us_"+this.name+"%20Pic.png)";
+                this.experiment.children[1].style.backgroundImage=" url(./img/About_us_"+this.name+"%20Txt.png)";
+            }
+        })
+    </script>

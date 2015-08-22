@@ -1,0 +1,57 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="form-input">
+    <style>
+        .in_put{
+            width: 100%;
+            height: 35px;
+            font-size: 20px;
+            font-weight:600 ;
+            border-radius: 20px;
+            border: 0px;
+            text-align: center;
+            z-index:2 ;
+            display: none;
+        }
+        .block{
+            position: relative;
+            margin-top: 30px;
+            width: 240px;
+            height: 35px;
+            background-size: 100% 100%;
+            z-index:1;
+        }
+    </style>
+
+    <template>
+            <div  class="block" on-click="getInput">
+                <input type="text" value={{title}} class="in_put" on-change="handleChange"  placeholder={{title}}/>
+            </div>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is:'form-input',
+        properties:{
+            title:{
+                type:String,
+                value:""
+            }
+        },
+        ready:function(){
+
+        },
+        getInput:function(e){
+            var input = e.target.children[0];
+            if(input)
+                input.style.display="block";
+
+        },
+        ready:function(){
+            this.$$(".block").style.backgroundImage=" url(./img/Join%20us/Name.png)";
+        },
+        handleChange:function(e){
+            title = e.target.value;
+        }
+    })
+</script>

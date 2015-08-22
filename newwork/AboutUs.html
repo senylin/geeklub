@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="alternate icon" type="img/png" href="image/Geekicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to a Fantasy World --- GeeKlub</title>
+
+   <!-- FullPage's CSS -->
+    <link rel="stylesheet" href="style/jquery.fullPage.css">
+    <link rel="stylesheet" href="style/AboutUsCss.css">
+
+    <!--FullPage's JS-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                'navigation':true,
+                'navigationPosition': 'left',
+            });
+            $(window).resize(function(){
+                autoScrolling();
+            });
+            function autoScrolling(){
+                var $ww = $(window).width();
+                if($ww < 1024){
+                    $.fn.fullpage.setAutoScrolling(false);
+                } else {
+                    $.fn.fullpage.setAutoScrolling(true);
+                }
+            }
+            autoScrolling();
+        });
+
+    </script>
+
+</head>
+<body>
+<div id="dowebok">
+
+    <div class="section">
+        <div id="header">
+            <img id="headerLogo" src="image/Geeklub%20Logo.png">
+            <div id="headerInfo">
+                <h1>GeeKlub</h1>
+                <p>哪怕只有短暂的一瞬，当我们的声音足够响亮之时，也要让整个森林稍微安静一会儿，听一段关于这个社团的故事...</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sectionList">
+                <a href="#"><img src="image/Member.png"></a>
+                <a href="#"><img src="image/Event.png"></a>
+            </div>
+            <div class="Down Down_1">
+                <a href="#"><img src="image/Down.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="sectionList  sectionListChange">
+                <a href="#"><img src="image/Activity.png"></a>
+                <a href="#"><img src="image/Production.png"></a>
+            </div>
+            <div class="sectionList">
+                <a href="#"><img src="image/Find.png"></a>
+                <a href="#"><img src="image/Share.png"></a>
+            </div>
+            <div class="Down Down_2">
+                <a href="#"><img src="image/Down.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+       <div class="container">
+           <div id="GSC">
+               <h1>GeeKlub<span>Social Contact</span></h1>
+           </div>
+           <div id="social">
+               <ul>
+                   <li><a href="http://www.github.com"><img src="image/Github.png"></a></li>
+                   <li><a href="http://www.coding.net"><img src="image/Coding.png"></a></li>
+                   <li><a href="http://segmentfault.com"><img src="image/segmentfault.png" style="width: 230px"></a></li>
+                   <li><a href="http://www.jianshu.com/users/1d2624b7e1f9/timeline"><img src="image/jian.png"></a></li>
+                   <li><a href="http://www.bilibili.tv"><img src="image/Bilibili.png"></a></li>
+                   <li><a href="http://www.weibo.com/5596258589"><img src="image/Weibo.png"></a></li>
+                   <li><a href="http://pan.baidu.com/s/1sj4vStv"><img src="image/Baiduyun.png"></a></li>
+               </ul>
+           </div>
+       </div>
+        <div id="footer">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li style="width: 50px"><a href="#"><img src="image/Logo.png"></a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeklub</title>
+    <link rel="import" href="components/geek-experiment.html">
+    <link rel="import" href="components/contact-logo.html">
+    <link rel="import" href="components/page-footer.html">
+    <link rel="import" href="components/page-oval.html">
+    <link href="css/about_us.css"rel="stylesheet"/>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div id="container">
+    <div class="pages">
+    <!--1-->
+    <div class="pageone">
+        <div class="header">
+            <div class="header_Geek"></div>
+            <div class="header_TXT"></div>
+            <div class="header_Logo click" onclick="window.location='./index.html'"></div>
+        </div>
+        <div class="main">
+           <geek-experiment name="1/Member"></geek-experiment>
+           <geek-experiment name="1/Event"></geek-experiment>
+        </div>
+        <page-footer page=0></page-footer>
+    </div>
+    <!--2-->
+    <div class="pagetwo">
+        <div class="main">
+            <geek-experiment name="2/Activity"></geek-experiment>
+            <geek-experiment name="2/Production"></geek-experiment>
+        </div>
+        <div class="main">
+            <geek-experiment name="2/Find"></geek-experiment>
+            <geek-experiment name="2/Share"></geek-experiment>
+        </div>
+        <page-footer page=1></page-footer>
+    </div>
+    <!--3-->
+    <div class="pagethree">
+        <div class="main">
+        <div id="socialContact">  <div class="social_logo"></div></div>
+        </div>
+        <div class="main">
+        <div id="all_logo">
+            <div class="logos">
+                <div class="logoL">
+                    <contact-logo logo="Github" ></contact-logo>
+                    <contact-logo logo="Coding"></contact-logo>
+                    <contact-logo logo="简"></contact-logo>
+                    <contact-logo logo="Bilibili"></contact-logo>
+                </div>
+                <div class="logoR">
+                    <contact-logo logo="segmentfault"></contact-logo>
+                    <contact-logo logo="Weibo"></contact-logo>
+                    <contact-logo logo="Baiduyun" onclick="location='https://www.baidu.com'"></contact-logo>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="footer_3">
+            <div class="footin">
+            <div class="shouye click"></div>
+            <div class="jiaru click"></div>
+            <div class="G_logo"></div>
+            <div class="lianxi click"></div>
+            <div class="guanyu click"></div></div>
+        </div>
+
+    </div>
+    </div>
+    <!--ball-->
+    <div id="main_oval">
+        <page-oval></page-oval>
+    </div>
+</div>
+<script type="text/javascript">
+    var Num = 0;
+</script>
+</body>
+</html>

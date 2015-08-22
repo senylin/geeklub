@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="alternate icon" type="img/png" href="image/Geekicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="style/IndexCss.css">
+    <title>Welcome to a Fantasy World --- GeeKlub</title>
+
+    <!-- Join/About Us JS -->
+    <script type="text/javascript">
+        function ImgChange(id){
+            if(id=='usBtn1'){
+                document.getElementById('usBtn1').src='image/AboutUs2.png';
+            }else{
+                document.getElementById('usBtn2').src='image/JoinUs2.png';
+            }
+        }
+        function ImaBack(id){
+            if(id=='usBtn1'){
+                document.getElementById('usBtn1').src='image/AboutUs.png';
+            }else{
+                document.getElementById('usBtn2').src='image/JoinUs.png';
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="indexLeft">
+    <div id="leftText">
+        <span>极</span><p>客部落由一群以创新、技术和时尚为生命意义的人组成。在这里，我们交流着技术，碰撞着
+        思想，开发出有趣、有意思的产品。<br />在这里，拒绝条条框框的约束，最大化地激发出自己的潜能。<br />
+        在这里，将热情、兴趣转化成知识，让你感受科技带来的力量。<br />在这里，没人能够阻止你的追求，也没有
+        人能够阻止得了你前进的脚步。</p>
+    </div>
+    <div id="usBtn">
+        <a href="AboutUs.html"><img id="usBtn1" src="image/AboutUs.png"  onmouseover="ImgChange('usBtn1')" onmouseout="ImaBack('usBtn1')" /></a>
+        <a href="JoinUs.html"><img id="usBtn2" src="image/JoinUs.png"  onmouseover="ImgChange('usBtn2')" onmouseout="ImaBack('usBtn2')"/></a>
+    </div>
+</div>
+<div id="centerImg">
+    <img src="image/Polygon1.png">
+    <img id="Logo" src="image/Logo.png">
+    <img src="image/Polygon2.png">
+</div>
+<div id="indexRight">
+    <div id="rightText">
+        <h1>GeeKlub</h1>
+        <p>做想做的事<br />做前无古人的事</p>
+        <p>Stay hungry , stay foolish</p>
+    </div>
+</div>
+</body>
+</html>

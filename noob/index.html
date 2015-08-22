@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="css/index.css"rel="stylesheet"/>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/build/react.js"></script>
+    <script src="js/build/JSXTransformer.js"></script>
+</head>
+<body  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div class="container">
+    <div class="left_page">
+     <div class="txt1"></div>
+        <div id="about_us"></div>
+        <div id="join_us"></div>
+    </div>
+    <div class="right_page">
+        <div class="txt_all">
+        <div class="txt2"></div>
+        <div class="txt3"></div>
+        <div class="txt4"></div>
+        </div>
+    </div>
+    <div class="top_tri"></div>
+    <div class="geek_logo"></div>
+    <div class="bottom_tri"></div>
+</div>
+<script type="text/jsx">
+    var Bear = React.createClass({
+     changeBear:function(){
+  React.render(
+    <BearM />,document.getElementById("about_us")
+    )
+     },
+     changeHtml:function(){
+     return window.location='./about_us.html';
+     },
+     render:function(){
+     return(
+            <div className="bear_all dian" onMouseOver={this.changeBear} onClick={this.changeHtml}>
+            <div className="bear_logo"></div>
+            <div className="bear_txt"></div>
+            </div>
+            )
+     }
+    })
+    var BearM = React.createClass({
+     changeBear:function(){
+          React.render(
+    <Bear />,document.getElementById("about_us")
+    )
+     },
+      changeHtml:function(){
+     return window.location='./about_us.html';
+     },
+     render:function(){
+     return(
+            <div className="bear_all dian" onMouseOut={this.changeBear} onClick={this.changeHtml}>
+            <div className="bear_logo_2" ></div>
+            <div className="bear_txt" href="about_us.html"></div>
+            </div>
+            )
+     }
+    })
+    React.render(
+    <Bear />,document.getElementById("about_us")
+    )
+
+
+     var Men = React.createClass({
+     changeMen:function(){
+  React.render(
+    <MenM />,document.getElementById("join_us")
+    )
+     },
+        changeHtml:function(){
+     return window.location='./form.html';
+     },
+     render:function(){
+     return(
+            <div className="men_all dian" onMouseOver={this.changeMen} onClick={this.changeHtml}>
+            <div className="men_logo"></div>
+            <div className="men_txt"></div>
+            </div>
+            )
+     }
+    })
+    var MenM = React.createClass({
+     changeMen:function(){
+          React.render(
+    <Men />,document.getElementById("join_us")
+    )
+     },
+        changeHtml:function(){
+     return window.location='./form.html';
+     },
+     render:function(){
+     return(
+            <div className="men_all dian" onMouseOut={this.changeMen} onClick={this.changeHtml}>
+            <div className="men_logo_2" ></div>
+            <div className="men_txt_2"></div>
+            </div>
+            )
+     }
+    })
+    React.render(
+    <Men />,document.getElementById("join_us")
+    )
+
+
+</script>
+</body>
+</html>

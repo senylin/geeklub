@@ -1,0 +1,70 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../js/jquery-2.1.3.min.js">
+<dom-module id="page-oval">
+    <style>
+        .oval_href{
+            width:30px;
+            height: 120px;
+        }
+        .oval_1{
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-top: 10px;
+            background: url(../img/About_us_1/Namol%20Oval.png);
+        }
+        .oval_2{
+            z-index: 20;
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-top: 10px;
+            background: url(../img/About_us_1/Blue%20Oval.png);
+        }
+    </style>
+
+    <template>
+        <div class="oval_href" >
+            <div class="oval_1 oval_2 click" on-click="getPageOne"></div>
+            <div class="oval_1 click" on-click="getPageTwo"></div>
+            <div class="oval_1 click" on-click="getPageThree" ></div>
+        </div>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is:'page-oval',
+        properties:{
+            page:{
+                type:Number,
+                value:0
+            }
+        },
+        getPageOne:function(){
+            this.page = window.Num;
+            this.page =0;
+            window.Num = this.page;
+            $(".oval_href").children(".oval_1").removeClass('oval_2');
+            $(".oval_href").children().eq(this.page).addClass('oval_2');
+            $(".pages").animate({top:'0px'},800);
+
+        },
+        getPageTwo:function(){
+            this.page = window.Num;
+            this.page =1;
+            window.Num = this.page;
+            $(".oval_href").children(".oval_1").removeClass('oval_2');
+            $(".oval_href").children().eq(this.page).addClass('oval_2');
+            $(".pages").animate({top:'-980px'},800);
+        },
+        getPageThree:function(){
+            this.page = window.Num;
+            this.page =2;
+            window.Num = this.page;
+            $(".oval_href").children(".oval_1").removeClass('oval_2');
+            $(".oval_href").children().eq(this.page).addClass('oval_2');
+            $(".pages").animate({top:'-1960px'},800);
+        }
+    })
+</script>
